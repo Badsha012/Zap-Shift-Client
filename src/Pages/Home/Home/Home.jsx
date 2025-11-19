@@ -6,6 +6,7 @@ import OurService from '../../../Component/HomeLayout/OurService';
 import Teams from '../../../Component/HomeLayout/Teams';
 import LivePercel from '../../../Component/HomeLayout/LivePercel';
 import Customer from '../../../Component/HomeLayout/Customer';
+import CustomerTestimonials from '../../../Component/HomeLayout/CustomerTestimonials';
 
 const Home = () => {
     return (
@@ -16,6 +17,7 @@ const Home = () => {
             <Teams></Teams>
             <LivePercel></LivePercel>
             <Customer></Customer>
+            <CustomerTestimonials></CustomerTestimonials>
         </div>
     );
 };

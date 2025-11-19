@@ -9,7 +9,7 @@ const Customer = () => {
           <h1 className="text-white text-3xl md:text-4xl font-bold mb-4">
             Merchant and Customer Satisfaction is Our First Priority
           </h1>
-          <p className="text-white/80 text-lg leading-relaxed">
+          <p className="text-gray-400 text-lg leading-relaxed">
             We offer the lowest delivery charge with the highest value along
             with 100% safety of your product. Pathao courier delivers your
             parcels in every corner of Bangladesh right on time.
