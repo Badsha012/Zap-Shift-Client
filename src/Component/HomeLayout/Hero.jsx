@@ -16,7 +16,7 @@ const Hero = () => {
         {/* text block */}
         <div className="flex-1">
           <h1 className="text-3xl md:text-5xl font-bold leading-tight">
-            We make sure your <span className="text-primary">Parcel arrives</span>{" "}
+            We make sure your <span className="text-[#03373D] font-extrabold">Parcel arrives</span>{" "}
             on time — no fuss.
           </h1>
           <p className="mt-4 text-sm md:text-base text-muted-foreground">

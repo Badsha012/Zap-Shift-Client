@@ -3,7 +3,7 @@ import React from "react";
 const Work = () => {
   return (
     <div className="max-w-5xl mx-auto py-8">
-      <h1 className="text-2xl font-bold py-8"> How it Works</h1>
+      <h1 className="text-2xl font-bold text-[#03373D] py-8"> How it Works</h1>
       <div className="grid md:grid-cols-4 grid-cols-1 gap-8">
         <div className="flex justify-between">
           <div className="card bg-base-100 w-96 shadow-sm">
@@ -15,7 +15,7 @@ const Work = () => {
               />
             </figure>
             <div className="card-body items-center text-center">
-              <h2 className="card-title"> Booking Pick & Drop</h2>
+              <h2 className="card-title text-[#03373D] font-bold"> Booking Pick & Drop</h2>
               <p>
                 From personal packages to business shipments — we deliver on
                 time, every time.
@@ -33,7 +33,7 @@ const Work = () => {
               />
             </figure>
             <div className="card-body items-center text-center">
-              <h2 className="card-title"> Booking Pick & Drop</h2>
+              <h2 className="card-title text-[#03373D] font-bold"> Booking Pick & Drop</h2>
               <p>
                 From personal packages to business shipments — we deliver on
                 time, every time.
@@ -51,7 +51,7 @@ const Work = () => {
               />
             </figure>
             <div className="card-body items-center text-center">
-              <h2 className="card-title"> Booking Pick & Drop</h2>
+              <h2 className="card-title text-[#03373D] font-bold"> Booking Pick & Drop</h2>
               <p>
                 From personal packages to business shipments — we deliver on
                 time, every time.
@@ -69,7 +69,7 @@ const Work = () => {
               />
             </figure>
             <div className="card-body items-center text-center">
-              <h2 className="card-title"> Booking Pick & Drop</h2>
+              <h2 className="card-title font-bold text-[#03373D]"> Booking Pick & Drop</h2>
               <p>
                 From personal packages to business shipments — we deliver on
                 time, every time.

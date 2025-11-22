@@ -57,7 +57,7 @@ const CustomerTestimonials = () => {
           alt=""
           className="w-40 mx-auto mb-4"
         />
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#03373D]">
           What our customers are saying
         </h2>
         <p className="text-gray-500 mt-2 max-w-2xl mx-auto">

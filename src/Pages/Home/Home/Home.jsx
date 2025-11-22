@@ -7,6 +7,7 @@ import Teams from '../../../Component/HomeLayout/Teams';
 import LivePercel from '../../../Component/HomeLayout/LivePercel';
 import Customer from '../../../Component/HomeLayout/Customer';
 import CustomerTestimonials from '../../../Component/HomeLayout/CustomerTestimonials';
+import Question from '../../../Component/HomeLayout/Question';
 
 const Home = () => {
     return (
@@ -18,6 +19,7 @@ const Home = () => {
             <LivePercel></LivePercel>
             <Customer></Customer>
             <CustomerTestimonials></CustomerTestimonials>
+            <Question></Question>
         </div>
     );
 };

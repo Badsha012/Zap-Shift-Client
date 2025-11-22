@@ -1,15 +1,17 @@
 import React from "react";
 import Logo from "../../../Component/Logo/Logo";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
+import { ArrowUpRight } from "lucide-react";
 
 const Navbar = () => {
     const links=
     <>
      <li><NavLink to="">Services</NavLink> </li>
-      <li><NavLink to="">Services</NavLink> </li> 
-      <li><NavLink to="">Services</NavLink> </li>
-       <li><NavLink to="">Services</NavLink> </li>
-        <li><NavLink to="">Services</NavLink> </li>
+      <li><NavLink to="">Coverage</NavLink> </li> 
+      <li><NavLink to="">About Us</NavLink> </li>
+       <li><NavLink to="">Pricing</NavLink> </li>
+        <li><NavLink to="">Blog</NavLink> </li>
+         <li><NavLink to="">Contact</NavLink> </li>
         
     
     </>
@@ -48,8 +50,12 @@ const Navbar = () => {
          {links}
         </ul>
       </div>
-      <div className="navbar-end">
-        <a className="btn">Button</a>
+      <div className="navbar-end gap-5">
+        <Link to="" className="btn">Sign In</Link>
+             <Link to="" className="btn bg-lime-300 text-bold">Sign Up</Link>
+              <button className="bg-black w-10 h-10 rounded-full flex items-center justify-center">
+        <ArrowUpRight className="text-lime-300 w-5 h-5" />
+      </button>
       </div>
     </div>
   );
