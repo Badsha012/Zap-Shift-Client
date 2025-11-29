@@ -7,7 +7,7 @@ const Hero = () => {
           <img
           src="https://i.ibb.co/tPpkgGVt/tiny-deliveryman.png"
           alt="Tiny delivery person icon"
-          className="w-16 h-16 md:w-20 md:h-20 text-center self-center"
+          className="w-20 h-30 md:w-20 md:h-20 text-center self-center"
         />
 
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-8">
