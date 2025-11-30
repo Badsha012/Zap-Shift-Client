@@ -1,54 +1,55 @@
-import { ArrowUpRight } from "lucide-react";
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Swiper core styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "swiper/css/autoplay"; 
+
+// Swiper Modules
+import { Pagination, Autoplay } from "swiper/modules";
 
 const Hero = () => {
   return (
-    <section className="bg-base-200 shadow-sm p-6 md:p-10 rounded-2xl">
-          <img
-          src="https://i.ibb.co/tPpkgGVt/tiny-deliveryman.png"
-          alt="Tiny delivery person icon"
-          className="w-20 h-30 md:w-20 md:h-20 text-center self-center"
-        />
-
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-8">
-        {/* small decorative image (optional) */}
-      
-        {/* text block */}
-        <div className="flex-1">
-          <h1 className="text-3xl md:text-5xl font-bold leading-tight">
-            We make sure your <span className="text-[#03373D] font-extrabold">Parcel arrives</span>{" "}
-            on time — no fuss.
-          </h1>
-          <p className="mt-4 text-sm md:text-base text-muted-foreground">
-          Enjoy fast, reliable parcel delivery with real-time tracking and zero hassle. From personal packages to business shipments — we deliver on time, every time.
-          </p>
-        </div>
-
-        {/* main illustration */}
+    <Swiper
+      slidesPerView={1.2}
+      centeredSlides={true}
+      spaceBetween={20}
+      grabCursor={true}
+      pagination={{ clickable: true }}
+      navigation={true}
+      autoplay={{
+        delay: 2000,
+        disableOnInteraction: false,
+      }}
+      modules={[Pagination, Autoplay]}
+      className="mySwiper"
+    >
+      <SwiperSlide>
         <img
-          src="https://i.ibb.co/5W19G8ck/big-deliveryman.png"
-          alt="Delivery person carrying a parcel"
-          className="w-40 md:w-72 lg:w-96 object-contain"
+          src="https://i.ibb.co.com/6RNvtQBc/banner1.png"
+          alt="Banner 1"
+          className="w-full h-auto rounded-xl"
         />
-      </div>
-     <div className="flex items-center gap-3">
-      {/* Main Button */}
-      <button className="bg-lime-300 px-6 py-3 rounded-full text-black font-semibold">
-        Track Your Parcel
-      </button>
+      </SwiperSlide>
 
-      {/* Icon Button */}
-      <button className="bg-black w-10 h-10 rounded-full flex items-center justify-center">
-        <ArrowUpRight className="text-lime-300 w-5 h-5" />
-      </button>
-      <button className="btn text-black font-semibold">Be A Ride</button>
-        
-        
+      <SwiperSlide>
+        <img
+          src="https://i.ibb.co.com/Xrzg8xP3/banner2.png"
+          alt="Banner 2"
+          className="w-full h-auto rounded-xl"
+        />
+      </SwiperSlide>
 
-    </div>
-   
-    </section>
-
+      <SwiperSlide>
+        <img
+          src="https://i.ibb.co.com/qLLzQN2P/banner3.png"
+          alt="Banner 3"
+          className="w-full h-auto rounded-xl"
+        />
+      </SwiperSlide>
+    </Swiper>
   );
 };
 
