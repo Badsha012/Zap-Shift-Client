@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router";
 import Root from "../Layout/Root";
 import Home from "../Pages/Home/Home/Home";
 import Coverage from "../Pages/Coverage/Coverage";
+import Contact from "../Pages/Contact/Contact";
 
  export const router = createBrowserRouter([
   {
@@ -16,7 +17,11 @@ import Coverage from "../Pages/Coverage/Coverage";
           path:"/coverage",
           element:<Coverage></Coverage>
 
-        }
+        },
+        {
+          path:"/contact",
+          element:<Contact></Contact>
+        },
 
     ]
   },
