@@ -21,12 +21,12 @@ const Coverage = () => {
   }
   return (
     <div>
-      <h2 class="text-5xl">We are available in 64 districts</h2>
+      <h2 class="text-5xl text-green-400 font-semibold py-4">We are available in 64 districts</h2>
 
       {/* search */}
       <div>
 
-        <form onSubmit={handleSearch}>
+        <form className="py-5" onSubmit={handleSearch}>
           <label className="input">
   <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <g

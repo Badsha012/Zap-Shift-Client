@@ -51,8 +51,8 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end gap-5">
-        <Link to="" className="btn">Sign In</Link>
-             <Link to="" className="btn bg-lime-300 text-bold">Sign Up</Link>
+        <Link to="/login" className="btn">Sign In</Link>
+             <Link to="/register" className="btn bg-lime-300 text-bold">Sign Up</Link>
               <button className="bg-black w-10 h-10 rounded-full flex items-center justify-center">
         <ArrowUpRight className="text-lime-300 w-5 h-5" />
       </button>
