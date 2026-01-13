@@ -15,7 +15,8 @@ import Contact from "../Pages/Contact/Contact";
         },
         {
           path:"/coverage",
-          element:<Coverage></Coverage>
+          element:<Coverage></Coverage>,
+          loader:() => fetch('/serviceCenter.json').then(res => res.json())
 
         },
         {
