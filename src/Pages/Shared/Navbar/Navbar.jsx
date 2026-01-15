@@ -4,19 +4,20 @@ import { Link, NavLink } from "react-router";
 import { ArrowUpRight } from "lucide-react";
 
 const Navbar = () => {
-    const links=
+  const links = (
     <>
-     <li><NavLink to="">Services</NavLink> </li>
-      <li><NavLink to="/coverage">Coverage</NavLink> </li> 
-      <li><NavLink to="">About Us</NavLink> </li>
-       <li><NavLink to="">Pricing</NavLink> </li>
-        <li><NavLink to="">Blog</NavLink> </li>
-         <li><NavLink to="/contact">Contact</NavLink> </li>
-        
-    
+      <li><NavLink to="/services">Services</NavLink></li>
+      <li><NavLink to="/coverage">Coverage</NavLink></li>
+      <li><NavLink to="/about">About Us</NavLink></li>
+      <li><NavLink to="/pricing">Pricing</NavLink></li>
+      <li><NavLink to="/blog">Blog</NavLink></li>
+      <li><NavLink to="/contact">Contact</NavLink></li>
     </>
+  );
+
   return (
     <div className="navbar bg-base-100 shadow-sm">
+      {/* LEFT */}
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -27,35 +28,46 @@ const Navbar = () => {
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
-              {" "}
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
                 d="M4 6h16M4 12h8m-8 6h16"
-              />{" "}
+              />
             </svg>
           </div>
+
           <ul
-            tabIndex="-1"
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            tabIndex={0}
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow"
           >
-           {links}
+            {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl"><Logo></Logo></a>
+
+        {/* ✅ FIX: NO <a> wrapper */}
+        <div className="btn btn-ghost text-xl">
+          <Logo />
+        </div>
       </div>
+
+      {/* CENTER */}
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-         {links}
+          {links}
         </ul>
       </div>
+
+      {/* RIGHT */}
       <div className="navbar-end gap-5">
         <Link to="/login" className="btn">Sign In</Link>
-             <Link to="/register" className="btn bg-lime-300 text-bold">Sign Up</Link>
-              <button className="bg-black w-10 h-10 rounded-full flex items-center justify-center">
-        <ArrowUpRight className="text-lime-300 w-5 h-5" />
-      </button>
+        <Link to="/register" className="btn bg-lime-300 font-bold">
+          Sign Up
+        </Link>
+
+        <button className="bg-black w-10 h-10 rounded-full flex items-center justify-center">
+          <ArrowUpRight className="text-lime-300 w-5 h-5" />
+        </button>
       </div>
     </div>
   );

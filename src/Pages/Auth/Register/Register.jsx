@@ -24,7 +24,7 @@ const Register = () => {
 
   return (
     <div className="card bg-base-100 w-full max-w-sm mx-auto shrink-0 shadow-2xl">
-      <h3 className="text-3xl text-center">Wlecome back</h3>
+      <h3 className="text-3xl text-center font-semibold">Wlecome back</h3>
       <p className="text-center">Please Login</p>
       <form className="card-body" onSubmit={handleSubmit(handleRegistration)}>
         <fieldset className="fieldset">
