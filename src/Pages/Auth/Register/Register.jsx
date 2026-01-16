@@ -2,6 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import useAuth from "../../../hooks/useAuth";
 import { Link } from "react-router";
+import SocialLogin from "../SocialLogin/SocialLogin";
 
 const Register = () => {
   const {
@@ -24,8 +25,8 @@ const Register = () => {
 
   return (
     <div className="card bg-base-100 w-full max-w-sm mx-auto shrink-0 shadow-2xl">
-      <h3 className="text-3xl text-center font-semibold">Wlecome back</h3>
-      <p className="text-center">Please Login</p>
+      <h3 className="text-3xl text-center font-semibold">Wlecome  to Zap Shift</h3>
+      <p className="text-center">Please Register</p>
       <form className="card-body" onSubmit={handleSubmit(handleRegistration)}>
         <fieldset className="fieldset">
           <label className="label">Email</label>
@@ -74,6 +75,7 @@ const Register = () => {
           </Link>
         </p>
       </form>
+      <SocialLogin></SocialLogin>
     </div>
   );
 };
