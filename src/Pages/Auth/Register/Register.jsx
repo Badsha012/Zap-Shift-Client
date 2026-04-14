@@ -29,6 +29,7 @@ const Register = () => {
       <p className="text-center">Please Register</p>
       <form className="card-body" onSubmit={handleSubmit(handleRegistration)}>
         <fieldset className="fieldset">
+          {/* email field */}
           <label className="label">Email</label>
           <input
             type="email"
