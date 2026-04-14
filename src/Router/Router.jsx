@@ -6,6 +6,7 @@ import Contact from "../Pages/Contact/Contact";
 import AuthLayout from "../Layout/AuthLayout";
 import Register from "../Pages/Auth/Register/Register";
 import Login from "../Pages/Auth/Login/Login";
+import About from "../Pages/About/About";
 
  export const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ import Login from "../Pages/Auth/Login/Login";
           path:"/contact",
           element:<Contact></Contact>
         },
+        {
+          path:"/about",
+          element:<About></About>
+        }
 
 
     ]
