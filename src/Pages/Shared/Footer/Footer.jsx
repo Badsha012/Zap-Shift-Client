@@ -7,11 +7,12 @@ const Footer = () => {
   <aside>
     <Logo></Logo>
     <p className="font-bold">
-      ACME Industries Ltd.
+      Enjoy fast, reliable parcel delivery with real-time tracking and zero hassle. From personal packages to 
       <br />
-      Providing reliable tech since 1992
+      business shipments — we deliver on time, every time.
+      
     </p>
-    <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
+    
   </aside>
   <nav>
     <div className="grid grid-flow-col gap-4">
